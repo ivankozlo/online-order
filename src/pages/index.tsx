@@ -4,7 +4,6 @@ import Layout from 'containers/layout/layout';
 import HeroBlock from 'containers/banner/hero-block';
 import Products from 'containers/products';
 import Categories from 'containers/categories';
-import InstagramReview from 'containers/instagram-review';
 import { getProducts } from 'helpers/get-products';
 import { getCategories } from 'helpers/get-categories';
 import { useRefScroll } from 'helpers/use-ref-scroll';
@@ -37,7 +36,6 @@ export default function Home({ products, categories }) {
       <HeroBlock />
       <Categories items={categories} />
       <Products items={products} ref={elRef} />
-      {/* <InstagramReview /> */}
     </Layout>
   );
 }
